@@ -47,3 +47,24 @@ function getElementNumberById(elementId){
     const currentScore = parseInt(currentScoreText);
     return currentScore
 }
+
+
+// set Inner text by id
+
+function setTextElementById(elementId, value){
+    const element  = document.getElementById(elementId)
+    element.innerText = value.innerText;
+    // console.log(element.innerText);
+}
+function setTextElementById2(elementId, value){
+    const element  = document.getElementById(elementId)
+    element.innerText = value;
+    // console.log(element.innerText);
+}
+
+// get element text by id
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
